@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\EntityFramework\EntityFramework\EntityFramework.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\UnitOfWork\UnitOfWork.EntityFramework\UnitOfWork.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\..\Domains\Domains\Domains.csproj" />
+  </ItemGroup>
+
+</Project>
